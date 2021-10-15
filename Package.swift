@@ -11,9 +11,11 @@ let package = Package(
         .library(
             name: "AgoraRtcKit",
             targets: [
-                "AgoraAIDenoiseExtension","AgoraCore","AgoraDav1dExtension","AgoraFDExtension","Agorafdkaac","Agoraffmpeg","AgoraJNDExtension","AgoraRtcKit","AgoraSoundTouch","AgoraSuperResolutionExtension","AgoraVideoSegmentationExtension"
+                "AgoraAIDenoiseExtension","AgoraCore","AgoraDav1dExtension","AgoraFDExtension","Agorafdkaac","Agoraffmpeg","AgoraJNDExtension","AgoraRtcKit","AgoraSoundTouch"
             ]
         ),
+        .library(name: "AgoraSuperResolutionExtension", targets: ["AgoraSuperResolutionExtension"]),
+        .library(name: "AgoraVideoSegmentationExtension", targets: ["AgoraVideoSegmentationExtension"])
     ],
     targets: [
         .binaryTarget(
